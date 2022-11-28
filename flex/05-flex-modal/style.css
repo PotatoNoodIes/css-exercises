@@ -15,9 +15,20 @@ body {
   justify-content: center;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 50px 15px 6px;
+  float: left;
+}
+
 .modal {
+  flex-direction: column;
   background: white;
-  width: 480px;
+  width: 510px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
@@ -27,13 +38,16 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  float: left;
+  margin: 15px 15px 150px 15px;
+  padding: 5px;
+  }
 
 .close-button {
   background: #eee;
@@ -46,7 +60,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  float: right;
+  margin: 15px 15px 15px 15px;
 }
+
+.text {
+  text-align: left;
+  margin: 0px 0px 15px 0px;
+  width: 490px;
+}
+
 
 button {
   padding: 8px 16px;
@@ -54,13 +77,25 @@ button {
 }
 
 button.continue {
+  display: flex;
+  justify-content: center;
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 85px;
+  float: left;
 }
 
 button.cancel {
+  display: flex;
+  justify-content: center;
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  font-weight: bold;
+  width: 75px;
+  margin-left: 8px;
+  float: left;
 }
